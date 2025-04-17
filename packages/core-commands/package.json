@@ -1,6 +1,6 @@
 {
 	"name": "@maur025/core-commands",
-	"version": "2.0.0-beta.4",
+	"version": "2.0.0-beta.5",
 	"type": "module",
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",

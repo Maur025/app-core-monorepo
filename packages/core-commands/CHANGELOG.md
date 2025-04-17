@@ -1,5 +1,13 @@
 # @maur025/core-commands
 
+## 2.0.0-beta.5
+
+### Major Changes
+
+- [`9b4dbf9`](https://github.com/Maur025/app-core-monorepo/commit/9b4dbf96d72736327226a650946def8835822a43) Thanks [@Maur025](https://github.com/Maur025)! - update exports of index ts
+
+- [`7cf62b7`](https://github.com/Maur025/app-core-monorepo/commit/7cf62b7494f115d2cd31c0990ea1edc95bafad80) Thanks [@Maur025](https://github.com/Maur025)! - fix to error export empty
+
 ## 2.0.0-beta.4
 
 ### Major Changes
