@@ -1,5 +1,11 @@
 # @maur025/core-commands
 
+## 2.0.0-beta.7
+
+### Major Changes
+
+- [`bf384a1`](https://github.com/Maur025/app-core-monorepo/commit/bf384a13c8ef53c4bf29fa1a98971089b8fad4d8) Thanks [@Maur025](https://github.com/Maur025)! - update export modules
+
 ## 2.0.0-beta.6
 
 ### Major Changes
