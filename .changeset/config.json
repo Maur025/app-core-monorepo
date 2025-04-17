@@ -1,7 +1,7 @@
 {
 	"$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
-	"changelog": ["@changesets/changelog-github", { "repo": "maur025/app-core-monorepo" }],
-	"commit": false,
+	"changelog": ["@changesets/changelog-github", { "repo": "Maur025/app-core-monorepo" }],
+	"commit": true,
 	"fixed": [],
 	"linked": [],
 	"access": "public",
