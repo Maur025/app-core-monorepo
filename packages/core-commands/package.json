@@ -1,16 +1,14 @@
 {
 	"name": "@maur025/core-commands",
 	"version": "2.0.0-beta.3",
-	"exports": {
-		"./*": {
-			"import": "./dist/index.js",
-			"types": "./dist/index.d.ts"
-		}
-	},
+	"type": "module",
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",
 		"check-types": "tsc --noEmit",
-		"build": "tsc -p tsconfig.json"
+		"build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"devDependencies": {
 		"@repo/eslint-config": "workspace:*",
@@ -18,7 +16,27 @@
 		"@turbo/gen": "^2.5.0",
 		"@types/node": "^22.14.0",
 		"eslint": "^9.24.0",
+		"tsup": "^8.4.0",
 		"typescript": "5.8.2"
 	},
-	"dependencies": {}
+	"sideEffects": false,
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"./package.json": {
+			"default": "./package.json"
+		},
+		".": {
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=18"
+	}
 }
