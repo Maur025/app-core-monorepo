@@ -1,5 +1,11 @@
 # @maur025/core-commands
 
+## 2.0.0-beta.2
+
+### Major Changes
+
+- [`8e92882`](https://github.com/Maur025/app-core-monorepo/commit/8e928821a4fe61b92ed60a9ae6f1165a6624658e) Thanks [@Maur025](https://github.com/Maur025)! - fix esport 2
+
 ## 2.0.0-beta.1
 
 ### Major Changes
