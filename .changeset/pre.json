@@ -10,6 +10,7 @@
     "@repo/ui": "0.0.0"
   },
   "changesets": [
+    "cruel-animals-strive",
     "open-bikes-tan",
     "pink-lamps-exist",
     "ready-bears-push",
