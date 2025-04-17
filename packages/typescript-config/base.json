@@ -6,14 +6,15 @@
 		"esModuleInterop": true,
 		"incremental": false,
 		"isolatedModules": true,
-		"lib": ["ES2022"],
-		"module": "NodeNext",
+		"lib": ["ES2020"],
+		"module": "ESNext",
 		"moduleDetection": "force",
-		"moduleResolution": "NodeNext",
+		"moduleResolution": "node",
 		"noUncheckedIndexedAccess": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "ES2022"
+		"target": "ES2020",
+		"noEmit": true
 	}
 }
