@@ -5,7 +5,7 @@
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",
 		"check-types": "tsc --noEmit",
-		"build": "tsup src/index.ts --dts --format esm,cjs --legacy-output --out-dir dist"
+		"build": "tsup src --dts --format esm,cjs --minify --out-dir dist"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -19,34 +19,20 @@
 		"tsup": "^8.4.0",
 		"typescript": "5.8.2"
 	},
-	"main": "./dist/index.js",
-	"module": "./dist/esm/index.js",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"typings": "./dist/index.d.ts",
 	"exports": {
 		"./package.json": {
 			"default": "./package.json"
 		},
 		"./command": {
-			"require": [
-				"./dist/command/abstract-command.js"
-			],
-			"import": [
-				"./dist/esm/command/abstract-command.js"
-			],
-			"types": [
-				"./dist/command/abstract-command.d.ts"
-			]
-		},
-		"./interface": {
-			"require": [
-				"./dist/interface/command.interface.js"
-			],
-			"import": [
-				"./dist/esm/interface/command.interface.js"
-			],
-			"types": [
-				"./dist/interface/command.interface.d.ts"
-			]
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts",
+			"node": "./dist/index.js",
+			"default": "./dist/index.js"
 		}
 	},
 	"files": [

@@ -1,6 +1,6 @@
-import ICommand from "../interface/command.interface";
+import type { ICommand } from "../interface/command.interface";
 
-export default abstract class AbstractCommand<I, R> implements ICommand<I, R> {
+export abstract class AbstractCommand<I, R> implements ICommand<I, R> {
 	private i?: I;
 
 	withRequest(request: I): ICommand<I, R> {
