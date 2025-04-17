@@ -1,5 +1,11 @@
 # @maur025/core-commands
 
+## 2.0.0-beta.6
+
+### Major Changes
+
+- [`226d80b`](https://github.com/Maur025/app-core-monorepo/commit/226d80b0247641a668f8912be960f6c3c8cb2b26) Thanks [@Maur025](https://github.com/Maur025)! - update mjs to js
+
 ## 2.0.0-beta.5
 
 ### Major Changes
