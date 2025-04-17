@@ -1,4 +1,4 @@
-import ICommand from "./command.interface";
+import ICommand from "../interface/command.interface";
 
 export default abstract class AbstractCommand<I, R> implements ICommand<I, R> {
 	private i?: I;
