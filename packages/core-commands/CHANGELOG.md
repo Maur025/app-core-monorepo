@@ -1,5 +1,11 @@
 # @maur025/core-commands
 
+## 2.0.0-beta.3
+
+### Major Changes
+
+- [`de423b9`](https://github.com/Maur025/app-core-monorepo/commit/de423b924ff402ed3907b004e8e6fc45f55b9285) Thanks [@Maur025](https://github.com/Maur025)! - fix exports 3
+
 ## 2.0.0-beta.2
 
 ### Major Changes
