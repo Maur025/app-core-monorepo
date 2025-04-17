@@ -1,5 +1,11 @@
 # @maur025/core-commands
 
+## 2.0.0-beta.8
+
+### Major Changes
+
+- [`a812965`](https://github.com/Maur025/app-core-monorepo/commit/a812965ca0f05aed789a3645e56a517227021ddb) Thanks [@Maur025](https://github.com/Maur025)! - update lib
+
 ## 2.0.0-beta.7
 
 ### Major Changes
