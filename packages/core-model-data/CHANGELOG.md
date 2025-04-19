@@ -1,5 +1,11 @@
 # @maur025/core-model-data
 
+## 1.0.1
+
+### Patch Changes
+
+- small update for fix publish
+
 ## 1.0.0
 
 ### Major Changes
