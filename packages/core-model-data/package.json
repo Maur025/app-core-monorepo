@@ -1,6 +1,6 @@
 {
 	"name": "@maur025/core-model-data",
-	"version": "1.0.0-beta.0",
+	"version": "1.0.0",
 	"author": "maur025 <mmoyapalli@gmail.com>",
 	"description": "utility library to declare and extend the model data in Typescript.",
 	"license": "MIT",
