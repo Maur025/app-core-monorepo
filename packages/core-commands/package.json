@@ -1,6 +1,6 @@
 {
 	"name": "@maur025/core-commands",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "maur025 <mmoyapalli@gmail.com>",
 	"description": "utility library to declare and extend the command pattern in Typescript.",
 	"license": "MIT",
@@ -20,7 +20,7 @@
 		"lint": "eslint . --max-warnings 0",
 		"check-types": "tsc --noEmit",
 		"build": "tsup src --dts --format esm,cjs --minify --out-dir dist",
-		"publish": "publish --tag latest"
+		"manual-publish": "publish --tag latest"
 	},
 	"publishConfig": {
 		"access": "public"
