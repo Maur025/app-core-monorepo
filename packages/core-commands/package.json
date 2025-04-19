@@ -1,11 +1,12 @@
 {
 	"name": "@maur025/core-commands",
-	"version": "2.0.0-beta.9",
+	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",
 		"check-types": "tsc --noEmit",
-		"build": "tsup src --dts --format esm,cjs --minify --out-dir dist"
+		"build": "tsup src --dts --format esm,cjs --minify --out-dir dist",
+		"publish": "publish --tag latest"
 	},
 	"publishConfig": {
 		"access": "public"
