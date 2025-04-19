@@ -1,8 +1,7 @@
 packages:
-  - apps/*
-  - packages/*
+    - packages/*
 
 onlyBuiltDependencies:
-  - core-js-pure
-  - esbuild
-  - sharp
+    - core-js-pure
+    - esbuild
+    - sharp
