@@ -1,26 +1,23 @@
 {
-  "mode": "pre",
-  "tag": "beta",
-  "initialVersions": {
-    "docs": "0.1.0",
-    "web": "0.1.0",
-    "@maur025/core-commands": "1.0.0",
-    "@repo/eslint-config": "0.0.0",
-    "@repo/typescript-config": "0.0.0",
-    "@repo/ui": "0.0.0"
-  },
-  "changesets": [
-    "calm-ways-push",
-    "cruel-animals-strive",
-    "hungry-brooms-invite",
-    "open-bikes-tan",
-    "petite-suits-invite",
-    "pink-lamps-exist",
-    "polite-poets-play",
-    "ready-bears-push",
-    "ripe-pants-sit",
-    "sad-maps-remain",
-    "silver-adults-build",
-    "slow-ways-trade"
-  ]
+	"mode": "pre",
+	"tag": "beta",
+	"initialVersions": {
+		"@repo/eslint-config": "0.0.0",
+		"@repo/typescript-config": "0.0.0",
+		"@repo/ui": "0.0.0"
+	},
+	"changesets": [
+		"calm-ways-push",
+		"cruel-animals-strive",
+		"hungry-brooms-invite",
+		"open-bikes-tan",
+		"petite-suits-invite",
+		"pink-lamps-exist",
+		"polite-poets-play",
+		"ready-bears-push",
+		"ripe-pants-sit",
+		"sad-maps-remain",
+		"silver-adults-build",
+		"slow-ways-trade"
+	]
 }
