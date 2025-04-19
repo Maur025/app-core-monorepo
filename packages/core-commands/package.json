@@ -1,6 +1,20 @@
 {
 	"name": "@maur025/core-commands",
 	"version": "1.0.0",
+	"author": "maur025 <mmoyapalli@gmail.com>",
+	"description": "utility library to declare and extend the command pattern in Typescript.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Maur025/app-core-monorepo.git",
+		"directory": "packages/core-commands"
+	},
+	"keywords": [
+		"command-pattern",
+		"typescript",
+		"command",
+		"utility"
+	],
 	"type": "module",
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",
