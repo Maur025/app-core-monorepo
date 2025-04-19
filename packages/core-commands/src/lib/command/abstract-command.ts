@@ -19,6 +19,7 @@ export abstract class AbstractCommand<I, R> implements ICommand<I, R> {
 		return this.run(this.i);
 	}
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	protected validate(request: I): void {
 		// ADD CUSTOM VALIDATION
 	}
