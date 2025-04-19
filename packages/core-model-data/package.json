@@ -1,0 +1,61 @@
+{
+	"name": "@maur025/core-model-data",
+	"version": "1.0.0",
+	"author": "maur025 <mmoyapalli@gmail.com>",
+	"description": "utility library to declare and extend the model data in Typescript.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Maur025/app-core-monorepo.git",
+		"directory": "packages/core-model-data"
+	},
+	"keywords": [
+		"data",
+		"typescript",
+		"interfaces",
+		"utility",
+		"models"
+	],
+	"type": "module",
+	"scripts": {
+		"lint": "eslint . --max-warnings 0",
+		"check-types": "tsc --noEmit",
+		"build": "tsup src --dts --format esm,cjs --minify --out-dir dist",
+		"publish": "publish --tag latest"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@repo/eslint-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"@turbo/gen": "^2.5.0",
+		"@types/express": "^5.0.1",
+		"@types/node": "^22.14.0",
+		"eslint": "^9.24.0",
+		"tsup": "^8.4.0",
+		"typescript": "5.8.2"
+	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"typings": "./dist/index.d.ts",
+	"exports": {
+		"./package.json": {
+			"default": "./package.json"
+		},
+		".": {
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts",
+			"node": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=18"
+	}
+}
