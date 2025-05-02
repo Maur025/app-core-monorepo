@@ -42,6 +42,32 @@ To update version execute:
 npx changeset version
 ```
 
+## PUBLISH VERSIONS (Recomended)
+
+To update version execute:
+
+```bash
+npx changeset publish
+```
+
+remember add new tag in git, with following command:
+
+```bash
+git tag -a v0.0.0 -m 'upgrade to version 0.0.0'
+```
+
+push tag with following command:
+
+```bash
+git push origin tag
+```
+
+or to push all use:
+
+```bash
+git push --tags
+```
+
 # MANUAL PUBLISH
 
 Navigate to root lib or app to publish, should be logged.

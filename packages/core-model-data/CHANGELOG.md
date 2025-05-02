@@ -1,5 +1,11 @@
 # @maur025/core-model-data
 
+## 1.1.0
+
+### Minor Changes
+
+- add new funtionality, to socket responses structure.
+
 ## 1.0.1
 
 ### Patch Changes
