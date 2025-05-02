@@ -62,10 +62,10 @@ push tag with following command:
 git push origin tag
 ```
 
-or to push all use:
+or to push all (recomended) use:
 
 ```bash
-git push --tags
+git push --follow-tags
 ```
 
 # MANUAL PUBLISH
