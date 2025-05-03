@@ -1,5 +1,11 @@
 # @maur025/core-model-data
 
+## 1.1.1
+
+### Patch Changes
+
+- new release to fix error type number to string in timestamp to socket-base-response.
+
 ## 1.1.0
 
 ### Minor Changes
