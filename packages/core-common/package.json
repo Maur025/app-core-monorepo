@@ -1,6 +1,6 @@
 {
-	"name": "@mauro25/core-common",
-	"version": "0.0.0",
+	"name": "@maur025/core-common",
+	"version": "1.0.0",
 	"author": "maur025 <mmoyapalli@gmail.com>",
 	"description": "utility library to declare common util class and functions.",
 	"license": "MIT",

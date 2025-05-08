@@ -50,7 +50,7 @@ To update version execute:
 npx changeset publish
 ```
 
-remember add new tag in git, with following command:
+remember add new tag in git, with following command (if changeset hasn't created it):
 
 ```bash
 git tag -a v0.0.0 -m 'upgrade to version 0.0.0'
