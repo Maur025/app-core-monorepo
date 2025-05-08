@@ -1,84 +1,79 @@
-# Turborepo starter
+# PACKAGE MANAGER
 
-This Turborepo starter is maintained by the Turborepo core team.
+This project currently uses **pnpm** as its package manager.
 
-## Using this example
+Use the following command to install dependencies:
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
+```bash
+pnpm install
 ```
 
-## What's inside?
+# BUILDING
 
-This Turborepo includes the following packages/apps:
+To build the project, execute the following command:
 
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
+```bash
 pnpm build
 ```
 
-### Develop
+# RUN LINTER
 
-To develop all apps and packages, run the following command:
+To run linter, execute the following command:
 
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
+```bash
+pnpm lint
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+# RUN VERSION MANAGER
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## CREATE CHANGE LOG
 
+To run new changelog execute:
+
+```bash
+npx changeset
 ```
-npx turbo link
+
+## UPDATE VERSIONS
+
+To update version execute:
+
+```bash
+npx changeset version
 ```
 
-## Useful Links
+## PUBLISH VERSIONS (Recomended)
 
-Learn more about the power of Turborepo:
+To update version execute:
 
-- [Tasks](https://turbo.build/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/docs/reference/command-line-reference)
+```bash
+npx changeset publish
+```
+
+remember add new tag in git, with following command:
+
+```bash
+git tag -a v0.0.0 -m 'upgrade to version 0.0.0'
+```
+
+push tag with following command:
+
+```bash
+git push origin tag
+```
+
+or to push all (recomended) use:
+
+```bash
+git push --follow-tags
+```
+
+# MANUAL PUBLISH
+
+Navigate to root lib or app to publish, should be logged.
+verify `dist` folder existence.
+execute following command:
+
+```bash
+pnpm build --tag latest
+```
