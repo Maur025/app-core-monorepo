@@ -23,3 +23,26 @@ npm install @maur025/core-logger
 ```bash
 yarn add @maur025/core-logger
 ```
+
+## USAGE
+
+Add the next variables in to .env:
+
+```text
+LOG_PATH='silly'
+LOG_PATH=logs
+```
+
+Level can be any value of **_RFC5424_**
+
+```typescript
+const levels = {
+	error: 0,
+	warn: 1,
+	info: 2,
+	http: 3,
+	verbose: 4,
+	debug: 5,
+	silly: 6,
+};
+```

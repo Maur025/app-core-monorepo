@@ -1,6 +1,8 @@
 import chalk from "chalk";
 import { createLogger, format, transports } from "winston";
 import { env } from "../config/env";
+import { existsSync, mkdirSync } from "node:fs";
+import path from "node:path";
 
 const { combine, timestamp, printf, json } = format;
 const { cyan, red, yellow, green, white, gray, magenta, blue } = chalk;
@@ -11,6 +13,8 @@ export default class LoggerWinston {
 	private readonly logger;
 
 	constructor() {
+		this.ensureLogDir();
+
 		this.logger = createLogger({
 			format: combine(timestamp({ format: DATE_FORMAT }), json()),
 			transports: [
@@ -36,8 +40,26 @@ export default class LoggerWinston {
 						}),
 					),
 				}),
+				new transports.File({
+					filename: path.join(env.LOG_PATH, "app.log"),
+					level: "info",
+				}),
+				new transports.File({
+					filename: path.join(env.LOG_PATH, "error.log"),
+					level: "error",
+				}),
 			],
 		});
+	}
+
+	private ensureLogDir() {
+		try {
+			if (!existsSync(env.LOG_PATH)) {
+				mkdirSync(env.LOG_PATH, { recursive: true });
+			}
+		} catch (error) {
+			console.log(`Error in add dir [${env.LOG_PATH}] in your project`, error);
+		}
 	}
 
 	private readonly coloredByLevel = (level: string, text: string): string => {
