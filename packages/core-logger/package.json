@@ -1,0 +1,65 @@
+{
+	"name": "@maur025/core-logger",
+	"version": "1.0.0",
+	"author": "maur025 <mmoyapalli@gmail.com>",
+	"description": "utility library to logger with winston and chalk for backend node.",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Maur025/app-core-monorepo.git",
+		"directory": "packages/core-common"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"utility",
+		"utils",
+		"log",
+		"logger",
+		"backend"
+	],
+	"type": "module",
+	"scripts": {
+		"lint": "eslint . --max-warnings 0",
+		"check-types": "tsc --noEmit",
+		"build": "tsup src --dts --format esm,cjs --minify --out-dir dist",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"@repo/eslint-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"@turbo/gen": "^2.5.0",
+		"@types/node": "^22.14.0",
+		"eslint": "^9.24.0",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.3"
+	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"typings": "./dist/index.d.ts",
+	"exports": {
+		"./package.json": {
+			"default": "./package.json"
+		},
+		".": {
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts",
+			"node": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "pnpm@10.10.0",
+	"dependencies": {
+		"chalk": "^5.4.1",
+		"winston": "^3.17.0"
+	}
+}
