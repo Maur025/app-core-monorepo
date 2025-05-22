@@ -1,5 +1,11 @@
 # @maur025/core-model-data
 
+## 1.2.0
+
+### Minor Changes
+
+- add support to paginates in multi response data
+
 ## 1.1.1
 
 ### Patch Changes
