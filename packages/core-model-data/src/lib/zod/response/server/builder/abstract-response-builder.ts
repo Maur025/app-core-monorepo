@@ -1,7 +1,5 @@
 import { Response } from "express";
 import { BaseResponse } from "../base-response";
-import { $ZodType } from "zod/v4/core";
-import { parse } from "zod/v4";
 
 export abstract class AbstractResponseBuilder<R extends BaseResponse> {
 	protected response?: R;
@@ -13,8 +11,8 @@ export abstract class AbstractResponseBuilder<R extends BaseResponse> {
 		return this;
 	}
 
-	public withResponse(schema: $ZodType<R>, response: R): this {
-		parse(schema, response);
+	public withResponse(response: R): this {
+		BaseResponse.parse(response);
 
 		this.response = response;
 

@@ -1,5 +1,11 @@
 # @maur025/core-model-data
 
+## 2.0.2
+
+### Patch Changes
+
+- fix, param schema removed of abstractResponseBuilder in withResponse
+
 ## 2.0.1
 
 ### Patch Changes
