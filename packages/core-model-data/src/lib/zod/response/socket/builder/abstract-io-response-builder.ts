@@ -4,7 +4,7 @@ export abstract class AbstractIoResponseBuilder<R extends BaseIoResponse> {
 	protected response?: R;
 
 	public withResponse(response: R): this {
-		response = response;
+		this.response = response;
 
 		return this;
 	}

@@ -1,7 +1,7 @@
 import { Response } from "express";
 import { BaseResponse } from "../base-response";
-import { $ZodType, prettifyError } from "zod/v4/core";
-import { safeParse, parse } from "zod/v4";
+import { $ZodType } from "zod/v4/core";
+import { parse } from "zod/v4";
 
 export abstract class AbstractResponseBuilder<R extends BaseResponse> {
 	protected response?: R;
