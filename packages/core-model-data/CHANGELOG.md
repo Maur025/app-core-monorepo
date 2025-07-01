@@ -1,5 +1,11 @@
 # @maur025/core-model-data
 
+## 2.0.1
+
+### Patch Changes
+
+- first patch, fix error in withResponse response without this
+
 ## 2.0.0
 
 ### Major Changes
