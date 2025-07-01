@@ -34,12 +34,15 @@
 		"@types/node": "^22.14.0",
 		"eslint": "^9.24.0",
 		"tsup": "^8.4.0",
-		"typescript": "5.8.2"
+		"typescript": "5.8.2",
+		"zod": "^3.25.67"
+	},
+	"peerDependencies": {
+		"zod": "^3.25.x"
 	},
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"typings": "./dist/index.d.ts",
 	"exports": {
 		"./package.json": {
 			"default": "./package.json"
@@ -50,6 +53,13 @@
 			"types": "./dist/index.d.ts",
 			"node": "./dist/index.js",
 			"default": "./dist/index.js"
+		},
+		"./v1": {
+			"require": "./dist/index-v1.cjs",
+			"import": "./dist/index-v1.js",
+			"types": "./dist/index-v1.d.ts",
+			"node": "./dist/index-v1.js",
+			"default": "./dist/index-v1.js"
 		}
 	},
 	"files": [
@@ -57,8 +67,5 @@
 	],
 	"engines": {
 		"node": ">=18"
-	},
-	"dependencies": {
-		"zod": "^3.24.3"
 	}
 }
