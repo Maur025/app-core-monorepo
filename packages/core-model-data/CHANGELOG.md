@@ -1,5 +1,17 @@
 # @maur025/core-model-data
 
+## 2.0.1
+
+### Patch Changes
+
+- first patch, fix error in withResponse response without this
+
+## 2.0.0
+
+### Major Changes
+
+- migrate to use zod/v4 to schemas and types, lib divide in v1 interfaces and v2(current) zod schemas with types
+
 ## 1.2.0
 
 ### Minor Changes
