@@ -1,5 +1,17 @@
 # @maur025/core-model-data
 
+## 2.1.1
+
+### Patch Changes
+
+- fix validation from id, now convert all in string, expect null
+
+## 2.1.0
+
+### Minor Changes
+
+- option to receive numbers was added, kepping the database ID field as a string
+
 ## 2.0.2
 
 ### Patch Changes

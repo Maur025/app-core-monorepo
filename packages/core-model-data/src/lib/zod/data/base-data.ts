@@ -1,7 +1,11 @@
-import z, { boolean, object, string } from "zod/v4";
+import z, { boolean, object, preprocess, string } from "zod/v4";
 
 export const BaseData = object({
-	id: string().nonempty().optional(),
+	id: preprocess((value) => {
+		if (value == null) return undefined;
+
+		return String(value);
+	}, string().nonempty()).optional(),
 	deleted: boolean().optional(),
 });
 
