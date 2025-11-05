@@ -1,4 +1,4 @@
-import z, { number, object } from "zod/v4";
+import z, { number, object } from "zod";
 
 export const PaginateResponse = object({
 	pages: number().nonnegative(),

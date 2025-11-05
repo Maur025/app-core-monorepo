@@ -1,4 +1,4 @@
-import z, { any, number, object, string } from "zod/v4";
+import z, { any, number, object, string } from "zod";
 import { BaseData } from "../../data/base-data";
 
 export const ApiResponse = object({

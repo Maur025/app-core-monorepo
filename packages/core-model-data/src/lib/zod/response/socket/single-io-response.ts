@@ -1,4 +1,4 @@
-import z, { any } from "zod/v4";
+import z, { any } from "zod";
 import { BaseIoResponse } from "./base-io-response";
 
 export const SingleIoResponse = BaseIoResponse.extend({

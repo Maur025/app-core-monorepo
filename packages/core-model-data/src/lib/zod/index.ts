@@ -16,7 +16,7 @@ export * from "./response/server/builder/abstract-response-builder";
 export * from "./response/server/builder/single-response-builder";
 export * from "./response/server/builder/multi-response-builder";
 
-// SERVER SOCKER RESPONSE ZOD/V4
+// SERVER SOCKET RESPONSE ZOD/V4
 export * from "./response/socket/base-io-response";
 export * from "./response/socket/single-io-response";
 export * from "./response/socket/multi-io-response";

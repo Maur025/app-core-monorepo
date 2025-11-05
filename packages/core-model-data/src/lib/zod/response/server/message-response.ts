@@ -1,4 +1,4 @@
-import z, { string } from "zod/v4";
+import z, { string } from "zod";
 import { BaseResponse } from "./base-response";
 
 export const MessageResponse = BaseResponse.extend({

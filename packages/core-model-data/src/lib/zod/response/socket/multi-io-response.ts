@@ -1,4 +1,4 @@
-import z, { any, array } from "zod/v4";
+import z, { any, array } from "zod";
 import { BaseIoResponse } from "./base-io-response";
 
 export const MultiIoResponse = BaseIoResponse.extend({
