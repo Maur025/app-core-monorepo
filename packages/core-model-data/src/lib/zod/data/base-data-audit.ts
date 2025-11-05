@@ -1,4 +1,4 @@
-import z, { number } from "zod/v4";
+import z, { number } from "zod";
 import { BaseData } from "./base-data";
 
 export const BaseDataAudit = BaseData.extend({

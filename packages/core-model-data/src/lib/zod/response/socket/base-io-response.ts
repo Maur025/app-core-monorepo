@@ -1,4 +1,4 @@
-import z, { object, string } from "zod/v4";
+import z, { object, string } from "zod";
 
 export const BaseIoResponse = object({
 	id: string().nonempty(),

@@ -1,5 +1,17 @@
 # @maur025/core-model-data
 
+## 2.2.1
+
+### Patch Changes
+
+- fix per dependencies to external projects
+
+## 2.2.0
+
+### Minor Changes
+
+- update and migrate to zod v4.1
+
 ## 2.1.1
 
 ### Patch Changes

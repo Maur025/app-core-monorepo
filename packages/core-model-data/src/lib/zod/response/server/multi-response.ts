@@ -1,4 +1,4 @@
-import z, { any, array, record, string } from "zod/v4";
+import z, { any, array, record, string } from "zod";
 import { BaseResponse } from "./base-response";
 import { PaginateResponse } from "./paginate-response";
 import { BaseData } from "../../data/base-data";

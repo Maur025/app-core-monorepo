@@ -1,4 +1,4 @@
-import z, { boolean, object, preprocess, string } from "zod/v4";
+import z, { boolean, object, preprocess, string } from "zod";
 
 export const BaseData = object({
 	id: preprocess((value) => {

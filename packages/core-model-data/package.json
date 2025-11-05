@@ -1,6 +1,6 @@
 {
 	"name": "@maur025/core-model-data",
-	"version": "2.1.1",
+	"version": "2.2.1",
 	"author": "maur025 <mmoyapalli@gmail.com>",
 	"description": "utility library to declare and extend the model data in Typescript.",
 	"license": "MIT",
@@ -35,10 +35,10 @@
 		"eslint": "^9.24.0",
 		"tsup": "^8.4.0",
 		"typescript": "5.8.2",
-		"zod": "^3.25.67"
+		"zod": "^4.1.12"
 	},
 	"peerDependencies": {
-		"zod": "^3.25.x"
+		"zod": "^4.0.0"
 	},
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.js",

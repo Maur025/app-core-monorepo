@@ -1,4 +1,4 @@
-import z, { boolean, number, object, string } from "zod/v4";
+import z, { boolean, number, object, string } from "zod";
 
 export const ErrorCauseResponse = object({
 	code: string().optional(),
